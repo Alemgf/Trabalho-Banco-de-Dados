@@ -1,3 +1,6 @@
+° Alexandre Maia
+° Matheus Espindola
+
 #  027 - Vestuário 
 
 A empresa 027 é focada no vestuário masculino, temos lojas e filiais espalhadas por todo o Brasil. A empresa necessita de um Banco de Dados que possa armazenar as informações do nosso estoque, informações como vendas, compras, quantidade de camisas em estoque e armazenamento do estoque.  
