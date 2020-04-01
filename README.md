@@ -1,4 +1,4 @@
-# Alexandre Maia e Matheus Espindola  // SI1NA
+#  027 - Loja de Roupas
 
 Nossa empresa é focada no vestuário masculino e se chama 027, temos lojas e filiais espalhadas por todo o Brasil. A empresa necessita de um Banco de Dados que possa armazenar as informações do nosso estoque, informações como vendas, compras, quantidade de camisas em estoque e armazenamento do estoque.  
 
