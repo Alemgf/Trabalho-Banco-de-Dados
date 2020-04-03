@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Modelo Conceitual" id="117CFF67-181F-C412-2DE5-0127910CC69B" version="3.5">
+<createdBy>mathe</createdBy>
+<createdTime>2020-04-03 22:46:44 UTC</createdTime>
+<ownerDesignName>Modelo Conceitual</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>117CFF67-181F-C412-2DE5-0127910CC69B</designId>
+</OSDM_Design>
