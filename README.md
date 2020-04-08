@@ -1,5 +1,6 @@
 ° Alexandre Maia
 ° Matheus Espindola
+° Samuel Alves
 
 #  027 - Vestuário 
 
