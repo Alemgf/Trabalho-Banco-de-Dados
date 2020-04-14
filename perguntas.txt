@@ -1,0 +1,55 @@
+Sobre o estoque:
+
+
+
+controle de estoque - controlar o fluxo de materiais dentro de uma empresa e apontar informações importantes sobre vendas, bem como analisar e prever quais serão as necessidades de compras futuras
+
+
+
+giro de estoque - o giro de estoque auxilia você a administrar melhor as mercadorias da empresa conforme a frequência das vendas.
+
+
+
+custo de estoque - O cálculo do custo de estoque é importante para o controle das despesas operacionais. E, consequentemente, é um fator que tem impacto nas margens e no lucro líquido de um negócio.
+
+produto - Valor da venda + Lucro por venda
+
+
+
+
+Funcionarios:
+
+comição por venda - quanto cada um ganha separado por comição de venda
+
+média de vendas - qual a meta de vendas para cada funcionario por mês
+
+cargo: como cada funcionario foi cadastrado no banco de dados da empresa - vendendor, embalador, caixa e distribuidor (encomendas).
+
+
+
+
+encomendas:
+
+frete grátis para vendas online para cidade da loja.
+
+frete pago para demais regiões e calculado pela distância.
+
+quantidade de encomendas por cliente.
+
+(extra) a partir de um numero especifico de encomendas o frete é gratis.
+
+codigo de rastreio por venda, codigo incluso de cada produto.  ( a encomenda com todos produtos tem um unico codigo de rastreio mas cada produto tem seu proprio codigo na venda ).
+
+
+
+cliente: 
+
+dados cadastrais do cliente na loja
+
+compras ja feitas anteriormente pelo cliente
+
+quanto o cliente ja gastou na loja
+
+quais são as peças de roupa que o cliente mais procura para comprar
+
+quais são as cores de roupa que o cliente mais gosta
