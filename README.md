@@ -1,7 +1,7 @@
 ° Alexandre Maia
 ° Matheus Espindola
 ° Samuel Alves
-° Caio 
+° Caio Schneider 
 #  027 - Vestuário 
 
 A empresa 027 é focada no vestuário masculino, temos lojas e filiais espalhadas por todo o Brasil. A empresa atualmente necessita de um meio mais prático para armazenar suas informções, que atualmente são armazenadas por uma equipe, informações como controle do nosso estoque, vendas, compras, quantidade de camisas em estoque e capacidade do estoque.  
