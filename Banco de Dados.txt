@@ -1,0 +1,109 @@
+create table Filial(
+    id          Integer         primary key,
+    cnpj        Varchar2(32)    unique          not null,
+    cidade      Varchar2(32)                    not null,
+    contato     Varchar2(32)                    not null
+);
+
+
+create table Funcionarios(
+    id          Integer         primary key,
+    cpf         Varchar2(14)    unique          not null,
+    nome        Varchar2(32)                    not null,
+    sobrenome   Varchar2(32)                    not null,
+    matricula   Integer         unique          not null,
+    id_Filial   Integer                         not null,
+    
+    foreign key (id_Filial) references Filial (id)
+);
+
+
+create table Atendente(
+    nota            Integer     not null,
+    id_funcionarios Integer     not null,
+    
+    foreign key (id_funcionarios) references Funcionarios(id),
+    primary key (id_funcionarios)
+);
+
+
+create table Vendedor(
+    comissao        Real        not null,
+    id_funcionarios Integer     not null,
+    
+    foreign key (id_funcionarios) references Funcionarios(id),
+    primary key (id_funcionarios)
+);
+
+
+create table Cliente(
+    id              Integer         primary key,
+    primeiro_nome   Varchar2(14)    unique      not null,
+    sobrenome       Varchar2(32)                not null,
+    cpf             Varchar2(32)                not null,
+    telefone        Integer         unique      not null,
+    data_nacimento  Varchar2(32)                not null
+);
+
+
+create table Endereco(
+    id              Integer         primary key,
+    cep             Varchar2(9)     not null, 
+    cidade          Varchar2(32)    not null,
+    bairro          Varchar2(32)    not null,
+    rua_casa        Varchar2(5)     not null,
+    numero_casa     Varchar2(32)    not null,
+    id_cliente      Integer         not null,
+    
+    foreign key(id_cliente) references Cliente (id)
+);
+
+
+create table Atendimento(
+    id              Integer             primary key,
+    descricao       Varchar2(32)        not null,
+    data            Date                not null,
+    avaliacao       Varchar2(32)        not null,
+    id_Atendente    Integer             not null,
+    id_cliente      Integer             not null,
+    
+    foreign key (id_cliente)    references Cliente      (id),
+    foreign key (id_Atendente)  references Atendente    (id_funcionarios)
+);
+
+
+
+create table Venda(
+    id              Integer     primary key,
+    data            Date        not null,
+    total           Real        not null,
+    nota_fiscal     Integer     not null,
+    
+    id_vendedor     Integer not null,
+    id_cliente      Integer not null,
+    
+    foreign key (id_cliente)  references Cliente     (id),
+    foreign key (id_vendedor) references Vendedor    (id_funcionarios)
+);
+
+
+create table Produto(
+    id          Integer         primary key,
+    marca       Varchar2(32)    not null,
+    modelo      Varchar2(32)    not null,
+    valor       Real            not null,
+    cod_barras  Varchar2(32)    not null
+);
+
+
+
+create table Item(
+    id              Integer      primary key,
+    quantidade      Integer     not null,
+    
+    id_venda        Integer not null,
+    id_produto      Integer not null,
+    
+    foreign key (id_venda)   references Venda       (id),
+    foreign key (id_produto) references Produto     (id)
+);
